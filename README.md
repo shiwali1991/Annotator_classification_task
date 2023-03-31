@@ -1,18 +1,20 @@
 # Annotator_classification_task
 # About
-- A quick tool to classify annotators into "Good" and "Bad" annotators.
-- Run the 
-The company was e-scooter based start-up aiming to expand in Europe. 
-- They basically required data about population of different cities, flight data as the e-scooters were used a lot by backpack tourists as well. 
-- And weather data as well because the usage gets interrupted or enhanced depending upon weather conditions. 
-- After storing it locally in a database, it was required of us to connect to cloud database and run the code scripts on the cloud as well to get real time data scheduled daily.
-- I used the following to get the data: web scraping, APIs, Rapid APIs and AWS cloud service. 
-- The elaborate details could be read on the medium article that i wrote for this project. The link is given below: 
-https://medium.com/@shiwali1991/data-pipeline-assembly-to-automation-336a681dc258
-
+- A quick tool to classify annotators into "Good" and "Bad" annotators. The tool relies upon three factors accuracy, level of agreement with other annotators and time. It uses the concept of weighted average to come up to a score and then classifies the annotators using kmeans.
+ 
+# Description
+- "Quality_Match_bicycle_task.ipynb" is the python notebook. It contains all the functions with comments as well as visualizations.
+- "annotator_classify.py" is streamlit text file that can be run to test the classification.
+- "Quality Match_bicycle_task.ppt.pdf" is presentation pdf that contains summarized findings and future scope of work.
+- "Quality_Match_bicycle_task.ipynb" is the python text file.
 
 # how to use
-- Add two data files  sample annotation "<>" and reference data "<>" in the same root directory. 
+- Add two data files  sample annotation "anonymized_project.json" and reference data "references.json" in the same root directory. 
 - Pipeline Run simply by python Quality_Match_bicycle_task.py
 - Streamlit app run simply by streamlit run annotator_classify.py
-- 
+- The presentation can be accessed from here as well as from the link.
+
+# Future Work
+- To work on the metric to calculate score
+- To work on the prototype
+- To have feedback and learning mechanism for annotators.
